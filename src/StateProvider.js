@@ -7,11 +7,16 @@ export const StateProvider = ({ children }) => {
     switch (action.type) {
       case "ADD_TO_BASKET":
         //Logic
-        return { state };
+        return { ...state, basket: [...state.basket, action.item] };
 
       case "REMOVE_FROM_BASKET":
-        //Logic
-        return { state };
+        let newBasket = [...state.basket];
+        const index = state.basket.findIndex(
+          (basketItem) => basketItem.id === action.id
+        );
+
+        newBasket.splice(index, 1);
+        return { ...state, basket: newBasket };
 
       default:
         return state;
@@ -19,7 +24,7 @@ export const StateProvider = ({ children }) => {
   };
 
   const initialState = {
-    basket: ["as"],
+    basket: [],
   };
 
   return (
