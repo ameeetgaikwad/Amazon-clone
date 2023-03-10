@@ -4,7 +4,7 @@ A clone of amazon which is created with the help of react, context api(api in re
 You can visit the website [here](https://ameeetgaikwad.github.io/Amazon-clone/).
 
 ## Features
-• You can Sign In and Sign Out of the website. Your login data will be stored in firebase.<br>• You can add to basket and see all the items in the checkout page.<br>• You can see the total amount of things you have purchased in the checkout page. The website is not responsive yet, I'm working on it.
+• You can Sign In and Sign Out of the website. Your login data will be stored in firebase.<br>• You can add to basket and see all the items in the checkout page.<br>• You can see the total amount of things you have purchased in the checkout page. <br>`The website is not responsive yet, I'm working on it.`
 
 ## Available Scripts
 
