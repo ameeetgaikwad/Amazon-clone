@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
+import Login from "./Login";
 
 function App() {
   return (
     <div className="app">
       <Routes>
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/login" />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </div>

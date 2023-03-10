@@ -2,6 +2,9 @@ import React, { createContext, useContext, useReducer } from "react";
 
 export const StateContext = createContext(null);
 
+export const getBasketTotal = (basket) =>
+  basket?.reduce((amount, item) => item.price + amount, 0);
+
 export const StateProvider = ({ children }) => {
   const reducer = (state, action) => {
     switch (action.type) {
