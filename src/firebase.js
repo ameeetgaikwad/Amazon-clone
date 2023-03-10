@@ -1,18 +1,21 @@
-import { firebase } from "firebase/app";
-import "firebase/auth";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 // TODO: Replace the following with your app's Firebase project configuration
 
-const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyA4MzN5_MamyPp4RloBkzIsEPKrmJMXeqg",
-  authDomain: "clone-10597.firebaseapp.com",
-  projectId: "clone-10597",
-  storageBucket: "clone-10597.appspot.com",
-  messagingSenderId: "102087064826",
-  appId: "1:102087064826:web:8b6facc0beac8823511d43",
-  measurementId: "G-XW3YYVX80S",
-});
+let firebaseConfig = {
+  apiKey: "AIzaSyBLKfsx9yk8kt9horHJw6fbYPO78ew-OBg",
+  authDomain: "clone2-bff30.firebaseapp.com",
+  projectId: "clone2-bff30",
+  storageBucket: "clone2-bff30.appspot.com",
+  messagingSenderId: "222758370468",
+  appId: "1:222758370468:web:7d7077c3beb06d7716fa31",
+  measurementId: "G-BZS08EMVKG",
+};
 
-const auth = app.auth();
+let firebaseApp = firebase.initializeApp(firebaseConfig);
 
-export default app;
+const auth = firebase.auth();
+
+export { auth };
