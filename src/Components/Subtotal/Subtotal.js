@@ -1,9 +1,9 @@
 import React from "react";
 
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../ContextAPI/StateProvider";
 import "./Subtotal.css";
 
-import { getBasketTotal } from "./StateProvider";
+import { getBasketTotal } from "../ContextAPI/StateProvider";
 
 function Subtotal() {
   const [{ basket }] = useStateValue();

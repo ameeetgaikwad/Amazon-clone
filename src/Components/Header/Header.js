@@ -3,8 +3,8 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
+import { useStateValue } from "../ContextAPI/StateProvider";
+import { auth } from "../Authentication/firebase";
 
 function Header() {
   const [{ basket, user }] = useStateValue();
@@ -39,14 +39,14 @@ function Header() {
           </div>{" "}
         </Link>
 
-        <Link to="/login" className="header__link">
+        <Link className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
             <span className="header__optionLineTwo">& Orders</span>
           </div>{" "}
         </Link>
 
-        <Link to="/login" className="header__link">
+        <Link className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Your</span>
             <span className="header__optionLineTwo">Prime </span>

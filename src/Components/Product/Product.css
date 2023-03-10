@@ -34,6 +34,17 @@
 
 .product > button {
   background-color: #f0c14b;
-  border: 1px solid;
   border-color: #a88734, #9c7e31, #846a29;
+  border-radius: 7px;
+  border: none;
+  padding: 4px 10px;
+}
+
+.product > button:hover {
+  cursor: pointer;
+  background-color: #d7a014;
+}
+
+.product > button:active {
+  transform: scale(97%);
 }
