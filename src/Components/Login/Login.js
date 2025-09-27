@@ -33,7 +33,7 @@ function Login() {
       <Link to="/">
         <img
           className="login__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
+          src="https://seeklogo.com/images/F/flipkart-logo-3E9F11C59C-seeklogo.com.png"
           alt=""
         />
       </Link>
@@ -56,11 +56,11 @@ function Login() {
           </button>
         </form>
         <p>
-          By continuing, you agree to Amazon's Conditions of Use and Privacy
+          By continuing, you agree to Flipkart's Conditions of Use and Privacy
           Notice.
         </p>
         <button onClick={register} className="login__registerButton">
-          Create your Amazon Account
+          Create your Flipkart Account
         </button>
       </div>
     </div>
