@@ -20,7 +20,7 @@ function Header() {
       <Link to="/">
         <img
           className="header__logo"
-          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="https://seeklogo.com/images/F/flipkart-logo-3E9F11C59C-seeklogo.com.png"
           alt=""
         ></img>
       </Link>
